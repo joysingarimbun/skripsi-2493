@@ -11,7 +11,7 @@ Aplikasi ini merupakan sistem analisis sentimen untuk layanan perpajakan Coretax
 - Visualisasi hasil analisis dengan wordcloud untuk gambaran umum kata kunci
 - Aplikasi web interaktif menggunakan Streamlit untuk memudahkan analisis dan visualisasi
 
-# Fitur Utama
+### Fitur Utama
 
 - Crawling data komentar dan ulasan terkait layanan Coretax
 - Pelabelan data sentimen secara manual dan/atau otomatis
