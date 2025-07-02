@@ -30,7 +30,5 @@ Aplikasi ini merupakan sistem analisis sentimen terhadap layanan perpajakan **Co
 ## Pengambangan Aplikasi Web
 - Pengembangan aplikasi web menggunakan Streanlit
 - Fitur utama web dapat melakukan analisis sentimen terhadap dataset yang diunggah
-- Demo aplikasi Web dapat dilihat pada tautan berikut
-
-## Cara Menjalankan Program
-Cara menjalankan Seluruh kode program dapat dilihat pada video demo berikut:  
+- Demo aplikasi Web dapat dilihat pada tautan berikut https://drive.google.com/file/d/1yVuQZcenMo9ogNDSmkRKY089KnvuLQUF/view?usp=sharing
+ 
