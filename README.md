@@ -4,7 +4,7 @@ Aplikasi ini merupakan sistem analisis sentimen terhadap layanan perpajakan **Co
 
 ## ✨ Fitur Utama
 
-- **Pengambilan Data**: Menggunakan *tweet-harvest* untuk melakukan crawling data tweet terkait Coretax.
+- **Pengambilan Data**: Menggunakan *tweet-harvest* untuk melakukan crawling data tweet terkait Coretax. Hasil dari Proses Crawling dapat dilihat pada tautan berikut https://drive.google.com/file/d/1iKWzzYhZLNxq2Fu-qXlou-59YfeW-uE7/view?usp=sharing 
 - **Pelabelan Otomatis**: Sentimen data dilabeli secara otomatis menggunakan pendekatan *lexicon-based* dengan *INSET* (Indonesia Sentiment Lexicon).
 - **Pra-pemrosesan Teks**:
   - Normalisasi kata alay menggunakan kamus alay
