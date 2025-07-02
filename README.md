@@ -1,26 +1,16 @@
 # Aplikasi Web Analisis Sentimen Layanan Perpajakan Coretax
 
-Aplikasi ini merupakan sistem analisis sentimen untuk layanan perpajakan Coretax yang dikembangkan menggunakan metode pembelajaran mesin. Proses pelatihan dan pengembangan model dimulai dari crawling data, pelabelan data, pra-pemrosesan data, pelatihan dan pengujian model, serta pembuatan visualisasi wordcloud. Untuk antarmuka web, aplikasi dikembangkan menggunakan framework Streamlit agar mudah diakses dan digunakan.
+Aplikasi ini merupakan sistem analisis sentimen terhadap layanan perpajakan **Coretax** dengan pendekatan pembelajaran mesin. Aplikasi ini dikembangkan untuk mengklasifikasikan opini masyarakat (positif, negatif, netral) secara otomatis dari data Twitter menggunakan metode berbasis leksikon dan machine learning. Antarmuka pengguna dibangun menggunakan framework **Streamlit** sehingga mudah diakses melalui web.
 
-## Crawling Dataset X/twitter
+## ✨ Fitur Utama
 
-Dataset yang digunakan untuk melatih dan menguji model menggunakan data tweets yang didapat dari X/twitter. Proses crawling menggunakan tools twwet-harvest. Berikut dijabarkan langkah langkah untuk mendapatkan dataset dari X menggunakan tweets-harvest:
-- Gunakan Twitter/X auth token yang tersedia pada laman X 
-- Tentukan keyword berupa topik yang ingin dicari dan rentang waktu. cth "search_keyword = 'coretax until:2025-05-31 since:2025-05-01'"
-- Tunggu hingga proses crawling selesai
-
-
-### Fitur Utama
-
-- Crawling data komentar dan ulasan terkait layanan Coretax
-- Pelabelan data sentimen secara manual dan/atau otomatis
-- Pra-pemrosesan teks termasuk pembersihan, tokenisasi, dan normalisasi
-- Pelatihan dan pengujian model klasifikasi sentimen
-- Visualisasi hasil analisis dengan wordcloud untuk gambaran umum kata kunci
-- Aplikasi web interaktif menggunakan Streamlit untuk memudahkan analisis dan visualisasi
-
-## Cara Instalasi
-
-1. Clone repositori ini:  
-   ```bash
-   git clone https://github.com/username/repo-coretax-sentimen.git
+- **Pengambilan Data**: Menggunakan *tweet-harvest* untuk melakukan crawling data tweet terkait Coretax.
+- **Pelabelan Otomatis**: Sentimen data dilabeli secara otomatis menggunakan pendekatan *lexicon-based* dengan *INSET* (Indonesia Sentiment Lexicon).
+- **Pra-pemrosesan Teks**:
+  - Normalisasi kata alay menggunakan kamus alay
+  - *Stemming* menggunakan library **Sastrawi**
+- **Pelatihan Model**:
+  - Ekstraksi fitur teks menggunakan **TF-IDF**
+  - Klasifikasi sentimen menggunakan **Support Vector Machine (SVM)**
+- **Visualisasi Wordcloud**: Menampilkan kata-kata yang sering muncul berdasarkan kategori sentimen
+- **Aplikasi Web**: Dibangun dengan **Streamlit** untuk memudahkan penggunaan analisis secara interaktif
